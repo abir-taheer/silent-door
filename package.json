@@ -1,0 +1,48 @@
+{
+	"name": "quicker-picker-upper",
+	"version": "1.0.0",
+	"description": "Template for quick nodejs/react development",
+	"author": "Abir Taheer",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha",
+		"start": "node index",
+		"dev": "npx nodemon index",
+		"build": "npx sequelize db:migrate",
+		"prettier": "npx prettier --write ."
+	},
+	"dependencies": {
+		"apollo-server-express": "^2.22.2",
+		"body-parser": "latest",
+		"connect-session-sequelize": "^7.1.1",
+		"cookie-parser": "^1.4.5",
+		"dotenv": "latest",
+		"express": "latest",
+		"express-session": "^1.17.1",
+		"graphql": "^15.5.0",
+		"honeybadger": "^1.4.0",
+		"morgan": "^1.10.0",
+		"sqlite3": "^5.0.2",
+		"sequelize": "^6.6.2"
+	},
+	"devDependencies": {
+		"chai": "^4.3.4",
+		"mocha": "^8.3.2",
+		"nodemon": "^2.0.7",
+		"prettier": "^2.2.1",
+		"request": "^2.88.2",
+		"sequelize-cli": "^6.2.0"
+	},
+	"prettier": {
+		"useTabs": true,
+		"tabWidth": 4,
+		"arrowParens": "avoid",
+		"trailingComma": "none",
+		"semi": true,
+		"singleQuote": true,
+		"printWidth": 80
+	},
+	"mocha": {
+		"recursive": true
+	}
+}
